@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+.Out-of-stock{
+  background-color: rgb(28, 36, 78);
+}
+
+.In-stock{
+  background-color: #888;
+  color: black;
+}

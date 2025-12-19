@@ -1,8 +1,9 @@
 import React from "react"
+import '../App.css'
 export function Productcard({products}){
     return (
         products.map(product=>(
-            <div key={product.id}>
+            <div key={product.id} class = {!product.instock ? "Out-of-stock" : "In-stock"}>
 
                 {/* condition to check if there is an Image for any product before rendering */}
                 {product.image != "" && (
