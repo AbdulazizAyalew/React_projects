@@ -11,13 +11,13 @@ The goal is to strengthen my understanding of core React concepts by building sm
 - Rendering lists with `map()`
 - Data manipulation using `filter()` and `reduce()`
 - Organizing project structure with multiple components
-
+- React Routing
 ## 📂 Project Structure
 Each folder or file focuses on a specific concept, making it easy to understand and revise React fundamentals.
 
 ## 🎯 Purpose
 This repository is intended for:
-- Daily React practice
+- Weekly React Projects
 - Reinforcing JavaScript concepts used in React
 - Building a solid foundation before moving to larger projects
 
