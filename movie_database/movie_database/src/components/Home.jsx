@@ -12,7 +12,7 @@ function Home({movies}){
           <button type="submit">Filter by Genre</button>
         </form>
 
-        <p>Welcome To My Movie List</p>
+        <p className="WelcomeMessage">Welcome To My Movie List</p>
         <div>
           {movies.map((movie, index) => (
             <div className="Movies" key={index}>
