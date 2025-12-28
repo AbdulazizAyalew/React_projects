@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 function Home({movies}){
     return (
       <>
-        <form action="/search">
+        <form action="/search" className="filter-form">
           <input type="text" name="Genre"/>
           <button type="submit">Filter by Genre</button>
         </form>

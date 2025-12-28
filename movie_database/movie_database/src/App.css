@@ -41,3 +41,43 @@
   color: #888;
 }
 
+.filter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  margin: 20px 0;
+}
+
+.filter-form input {
+  padding: 10px 14px;
+  width: 220px;
+
+  border: 1px solid #585858;
+  border-radius: 6px;
+  font-size: 14px;
+
+  outline: none;
+}
+
+.filter-form input:focus {
+  border-color: #4f46e5;
+}
+
+.filter-form button {
+  padding: 10px 16px;
+
+  background-color: #635ec0;
+  color: rgb(248, 245, 245);
+
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+
+  transition: background-color 0.8s ease;
+}
+
+.filter-form button:hover {
+  background-color: #4338ca;
+}
