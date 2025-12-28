@@ -6,6 +6,7 @@ function MovieDetail({movies}) {
     var movie = movies[parseInt(id)];
     return(
         <>  
+            <p>Now showing the Detail of Movie {id}</p>
             <img src={movie.image} alt={movie.name} width="200"/>
             <p>{movie.name}</p>
             <p>Genre: {movie.Genre}</p>

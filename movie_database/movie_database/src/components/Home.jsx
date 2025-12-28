@@ -7,6 +7,11 @@ import { NavLink } from "react-router-dom";
 function Home({movies}){
     return (
       <>
+        <form action="/search">
+          <input type="text" name="Genre"/>
+          <button type="submit">Filter by Genre</button>
+        </form>
+
         <p>Welcome To My Movie List</p>
         <div>
           {movies.map((movie, index) => (

@@ -7,7 +7,7 @@ import MovieDetail from "./components/MovieDetail"
 const movies = [
   {
     name: "Stranger Things",
-    Genre: "Sci-fi , Horror",
+    Genre: "Horror",
     Seasons: "5",
     Rating: "10 / 10",
     image: "/images/Stranger_things.jpg",
@@ -21,7 +21,7 @@ const movies = [
   },
   {
     name: "Game of Thrones",
-    Genre: "Drama ,Thriller",
+    Genre: "Drama",
     Seasons: "8",
     Rating: "9.9 / 10",
     image: "/images/Got.jpg",
@@ -34,12 +34,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home  movies={movies}/>}/>
         <Route path="/movie/:id" element={<MovieDetail movies={movies}/>}/>
-        <Route path="/search" element={<Search/>}/>
+        <Route path="/search" element={<Search movies={movies}/>}/>
       </Routes>
     </BrowserRouter>
-    // <Movies 
-    // movies = {movies}
-    // />
+    
   )
 }
 
