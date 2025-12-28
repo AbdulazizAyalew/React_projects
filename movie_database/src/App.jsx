@@ -20,11 +20,11 @@ const movies = [
     image: "/images/Power.jpg",
   },
   {
-    name: "Game of Thrones",
-    Genre: "Drama",
-    Seasons: "8",
-    Rating: "9.9 / 10",
-    image: "/images/Got.jpg",
+    name: "Arcane",
+    Genre: "Adventure",
+    Seasons: "2",
+    Rating: "10 / 10",
+    image: "/images/Arcane.jpg",
   },
 ];
 
