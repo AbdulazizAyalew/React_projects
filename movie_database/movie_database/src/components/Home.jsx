@@ -1,39 +1,20 @@
 import React from "react";
 import "../App.css"
+import { NavLink } from "react-router-dom";
 
 
-var movies = [
-  {
-    name: "Stranger Things",
-    Genre: "Sci-fi,Horror",
-    Seasons: "5",
-    Rating: "10/10",
-    image: "/images/Stranger_things.jpg",
-  },
-  {
-    name: "Power",
-    Genre: "Drama",
-    Seasons: "6",
-    Rating: "9.8/10",
-    image: "/images/Power.jpg",
-  },
-  {
-    name: "Game of Thrones",
-    Genre: "Drama, Thriller",
-    Seasons: "8",
-    Rating: "9.9/10",
-    image: "/images/Got.jpg",
-  },
-];
-function Home(){
+
+function Home({movies}){
     return (
       <>
         <p>Welcome To My Movie List</p>
         <div>
-          {movies.map((movie) => (
-            <div className="Movies">
-              <img src={movie.image} alt={movie.name} width="200" />
-              <p>{movie.name}</p>
+          {movies.map((movie, index) => (
+            <div className="Movies" key={index}>
+              <NavLink to={`/movie/${index}`}>
+                <img src={movie.image} alt={movie.name} width="200" />
+                <p>{movie.name}</p>
+              </NavLink>
             </div>
           ))}
         </div>
