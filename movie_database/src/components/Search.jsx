@@ -10,7 +10,7 @@ function Search({movies}){
         <p>Current Genre: {Genre}</p>
         {movies.map(
           (movie) =>
-            movie.Genre == Genre && (
+            movie.Genre.toLowerCase() == Genre.toLowerCase() && (
               <>
                 <img src={movie.image} alt={movie.name} width="200" />
                 <p>{movie.name}</p>
