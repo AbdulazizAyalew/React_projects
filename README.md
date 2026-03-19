@@ -6,7 +6,7 @@ The goal is to strengthen my understanding of core React concepts by building sm
 ## 🚀 What I’m Practicing
 - React functional components and JSX
 - Props and component reusability
-- State management with `useState`
+- State management with `useState` 
 - Conditional rendering
 - Rendering lists with `map()`
 - Data manipulation using `filter()` and `reduce()`
